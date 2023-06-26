@@ -1,0 +1,7 @@
+[
+  { "index": 1, "label": "All products" },
+  { "index": 2, "label": "Electronics" },
+  { "index": 3, "label": "Jewelery" },
+  { "index": 4, "label": "Men's clothing" },
+  { "index": 5, "label": "Women's clothing" }
+]

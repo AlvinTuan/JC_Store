@@ -1,9 +1,11 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import Homepage from './pages/Homepage'
 
 function App() {
-  return <div></div>;
+  return (
+    <>
+      <Homepage></Homepage>
+    </>
+  )
 }
 
-export default App;
+export default App

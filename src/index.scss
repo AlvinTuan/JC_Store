@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply box-border;
+  }
+}
+@layer components {
+  header .menu ul li {
+    display: inline-block;
+    padding: 0px 24px;
+  }
+  .home-banner {
+    background: linear-gradient(to bottom left, #6dc4b4 0%, #cfc970 100%);
+  }
+  .banner__collection {
+    display: grid;
+    grid-template-columns: repeat(6, 230px);
+    grid-template-rows: repeat(2, 230px);
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .banner-bg {
+    position: relative;
+  }
+  .banner-bg:first-child {
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+  }
+  .banner-bg:nth-child(2) {
+    grid-row: 1 / 2;
+    grid-column: 3 / 5;
+  }
+  .banner-bg:nth-child(3) {
+    grid-row: 2 / 3;
+    grid-column: 3 / 5;
+  }
+  .banner-bg:last-child {
+    grid-row: 1 / 3;
+    grid-column: 5 / 7;
+  }
+  .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+  .banner-content h3 {
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: -1.25px;
+  }
+  .banner-content span {
+    font-size: 18px;
+  }
+  .product-inner:hover {
+    .hover-area a.add-to-cart {
+      @apply bg-secondary text-white;
+    }
+  }
+  .product-list .swiper-slide {
+    width: 365px;
+    height: auto;
+  }
+  .banner-bg .swiper-slide {
+    width: 365px;
+    height: auto;
+  }
+}
