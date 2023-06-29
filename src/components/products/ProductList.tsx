@@ -1,8 +1,3 @@
-import useSWR from 'swr'
-import { fetcher } from '../../config'
-import ProductCard from './ProductCard'
-import { ProductType } from '../../interface'
-import { SwiperSlide, Swiper } from 'swiper/react'
 import 'swiper/css'
 import { useState } from 'react'
 import labelItem from '../../dataJson/labelItem.json'
@@ -13,10 +8,6 @@ const ProductList = () => {
   function handleClickCategory(id: number) {
     setToggle(id)
   }
-  console.log(toggle)
-
-  const { data, error } = useSWR<ProductType[]>('https://fakestoreapi.com/products', fetcher)
-  const products = data || []
   return (
     <section>
       <div className='mx-auto w-full max-w-[1661px] font-medium'>

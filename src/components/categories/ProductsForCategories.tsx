@@ -1,5 +1,4 @@
 import { ProductType } from 'interface'
-import { useEffect, useState } from 'react'
 import useSWR from 'swr'
 import { fetcher } from '../../config'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -18,14 +17,13 @@ const ProductsForCategories: React.FC<ProductsForCategoriesProp> = ({ type }) =>
   }
   const { data, error } = useSWR<ProductType[]>(url, fetcher)
   const products = data || []
-  console.log(products)
 
   return (
     <>
       <Swiper spaceBetween={40} slidesPerView={'auto'}>
         {products.map((product) => (
-          <SwiperSlide>
-            <ProductCard product={product} key={product.id}></ProductCard>
+          <SwiperSlide key={product.id}>
+            <ProductCard product={product}></ProductCard>
           </SwiperSlide>
         ))}
       </Swiper>

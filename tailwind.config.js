@@ -7,6 +7,7 @@ module.exports = {
         body: ["Rubik", "sans-serif"],
       },
       colors: {
+        titleColor: "#626060",
         secondary: "#6dc4b4",
         activeColor: "#090909",
         unActiveColor: "#8a8a8a",

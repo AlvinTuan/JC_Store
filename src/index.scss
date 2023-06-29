@@ -59,7 +59,7 @@
     font-size: 18px;
   }
   .product-inner:hover {
-    .hover-area a.add-to-cart {
+    .hover-area button.add-to-cart {
       @apply bg-secondary text-white;
     }
   }
@@ -70,5 +70,25 @@
   .banner-bg .swiper-slide {
     width: 365px;
     height: auto;
+  }
+  // Cart
+  .cart {
+    height: 48px;
+    text-align: left;
+    font-size: 15px;
+    color: #626060;
+    font-weight: 300;
+    .product-name {
+      width: 590px;
+    }
+    .product-price {
+      width: 221px;
+    }
+    .product-quantity {
+      width: 184px;
+    }
+    .product-subtotal {
+      width: 273px;
+    }
   }
 }
